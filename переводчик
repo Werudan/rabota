@@ -1,0 +1,210 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+
+	cout << "[+] Переводчик" << endl << endl;
+	cout << "[1] Русские слова" << endl;
+	cout << "[2] Английские слова" << endl << endl;
+	cout << "[3] Выйти" << endl << endl;
+
+	cout << "Выберите: ";
+
+	int a;
+	int b;
+	int c;
+	int d;
+
+	cin >> a;
+	switch (a) {
+	case 1:
+		cout << "[+] Список русских слов" << endl << endl;
+		cout << "[1] Дорога" << endl;
+		cout << "[2] Мост" << endl;
+		cout << "[3] Еда" << endl;
+		cout << "[4] Вода" << endl;
+		cout << "[5] Нога" << endl;
+		cout << "[6] Рука" << endl;
+		cout << "[7] Дерево" << endl;
+		cout << "[8] Дом" << endl;
+		cout << "[9] Мама" << endl;
+		cout << "[10] Папа" << endl;
+		cout << "[11] Брат" << endl;
+		cout << "[12] Сестра" << endl;
+		cout << "[13] Дедушка" << endl;
+		cout << "[14] Бабушка" << endl;
+		cout << "[15] Собака" << endl;
+		break;
+	case 2:
+		cout << "[+] Список английских слов" << endl << endl;
+		cout << "[1] Road" << endl;
+		cout << "[2] Bridge" << endl;
+		cout << "[3] Food" << endl;
+		cout << "[4] Water" << endl;
+		cout << "[5] Leg" << endl;
+		cout << "[6] Arm" << endl;
+		cout << "[7] Tree" << endl;
+		cout << "[8] House" << endl;
+		cout << "[9] Mother" << endl;
+		cout << "[10] Father" << endl;
+		cout << "[11] Brother" << endl;
+		cout << "[12] Sister" << endl;
+		cout << "[13] Grandmother" << endl;
+		cout << "[14] Grandfather" << endl;
+		cout << "[15] Dog" << endl;
+		break;
+	case 3:
+		cout << "Вы вышли из программы." << endl;
+		return 0;
+		break;
+	default:
+		cout << "Такой команды нет." << endl;
+		return 0;
+		break;
+	}
+
+	cout << "Выберите номер слова: " << endl;
+	cin >> b;
+	switch (b) {
+	case 1:
+		if (a == 1) {
+			cout << "Перевод: Дорога --> Road" << endl;
+			return 0;
+			break;
+	case 2:
+		cout << "Перевод: Мост --> Bridge" << endl;
+		return 0;
+		break;
+	case 3:
+		cout << "Перевод: Еда --> Food" << endl;
+		return 0;
+		break;
+	case 4:
+		cout << "Перевод: Вода --> Water" << endl;
+		return 0;
+		break;
+	case 5:
+		cout << "Перевод: Нога --> Leg" << endl;
+		return 0;
+		break;
+	case 6:
+		cout << "Перевод: Рука --> Arm" << endl;
+		return 0;
+		break;
+	case 7:
+		cout << "Перевод: Дерево --> Tree" << endl;
+		return 0;
+		break;
+	case 8:
+		cout << "Перевод: Дом --> House" << endl;
+		return 0;
+		break;
+	case 9:
+		cout << "Перевод: Мама --> Mother" << endl;
+		return 0;
+		break;
+	case 10:
+		cout << "Перевод: Папа --> Father" << endl;
+		return 0;
+		break;
+	case 11:
+		cout << "Перевод: Брат --> Brother" << endl;
+		return 0;
+		break;
+	case 12:
+		cout << "Перевод: Сестра --> Sister" << endl;
+		return 0;
+		break;
+	case 13:
+		cout << "Перевод: Дедушка --> Grandfather" << endl;
+		return 0;
+		break;
+	case 14:
+		cout << "Перевод: Бабушка --> Grandmother" << endl;
+		return 0;
+		break;
+	case 15:
+		cout << "Перевод: Собака --> Dog" << endl;
+		return 0;
+		break;
+	default:
+		cout << "Такого слова нет в списке" << endl;
+		return 0;
+		break;
+		}
+	}
+
+	cout << "Выберите номер слова: " << endl;
+	cin >> c;
+	switch (c) {
+	case 1:
+		cout << "Перевод: Road --> Дорога" << endl;
+		return 0;
+		break;
+	case 2:
+		cout << "Перевод: Bridge --> Мост" << endl;
+		return 0;
+		break;
+	case 3:
+		cout << "Перевод: Food --> Еда" << endl;
+		return 0;
+		break;
+	case 4:
+		cout << "Перевод: Water --> Вода" << endl;
+		return 0;
+		break;
+	case 5:
+		cout << "Перевод: Leg --> Нога" << endl;
+		return 0;
+		break;
+	case 6:
+		cout << "Перевод: Arm --> Рука" << endl;
+		return 0;
+		break;
+	case 7:
+		cout << "Перевод: Tree --> Дерево" << endl;
+		return 0;
+		break;
+	case 8:
+		cout << "Перевод: House --> Дом" << endl;
+		return 0;
+		break;
+	case 9:
+		cout << "Перевод: Mother --> Мама" << endl;
+		return 0;
+		break;
+	case 10:
+		cout << "Перевод: Father --> Папа" << endl;
+		return 0;
+		break;
+	case 11:
+		cout << "Перевод: Brother --> Брат" << endl;
+		return 0;
+		break;
+	case 12:
+		cout << "Перевод: Sister --> Сестра" << endl;
+		return 0;
+		break;
+	case 13:
+		cout << "Перевод: Grandfather --> Дедушка" << endl;
+		return 0;
+		break;
+	case 14:
+		cout << "Перевод: Grandmother --> Бабушка" << endl;
+		return 0;
+		break;
+	case 15:
+		cout << "Перевод: Dog --> Собака" << endl;
+		return 0;
+		break;
+	default:
+		cout << "Такого слова нет в списке" << endl;
+		return 0;
+		break;
+	}
+
+	return 0;
+}
+
+int _;
